@@ -3,13 +3,17 @@
 class Router{
 
 	public static function runConnectivity(Request $request){
+<<<<<<< Updated upstream
 		$controller = $request->get_controller() . "controller";
 		$route = ROOT . "controller" . DS . $controller . ".php";
 		$method = $request->get_method();
+=======
+>>>>>>> Stashed changes
 		if (empty($method)) {
 			$method = "login";
 		}
 		$argument = $request->get_argument();
+<<<<<<< Updated upstream
 		if (is_readable($route)) {
 			require_once $route;
 			$mostrar = "controller\\" . $controller;
@@ -33,3 +37,14 @@ class Router{
 		}
 	}
 	?>
+=======
+		$route = ROOT . "views" .DS. $request->get_controller() .DS. $request->get_method() . ".php";
+		if (is_readable($route)) {
+			require_once $route;
+		} else {
+			print "No se encontro la vista";
+		}
+	}
+}
+?>
+>>>>>>> Stashed changes

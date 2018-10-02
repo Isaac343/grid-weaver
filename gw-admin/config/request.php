@@ -2,6 +2,10 @@
 
 class Request{
 
+<<<<<<< Updated upstream
+=======
+	private $rank;
+>>>>>>> Stashed changes
 	private $controller;
 	private $method;
 	private $argument;
