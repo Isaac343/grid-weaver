@@ -1,0 +1,23 @@
+<?php namespace Controllers;
+  use Models\Users as Users;
+  class usersController{
+    private $user;
+
+    function __construct(){
+      $this->user = new Users();
+    }
+
+    function add(){
+      if (isset($_POST['user_form'])) { //user form
+        $this->user->set('username', $_POST['username']);
+        $this->user->set('name', $_POST['name']);
+        $this->user->set('surname', $_POST['surname']);
+        $this->user->set('email', $_POST['email']);
+        $this->user->set('rol', $_POST['rol']);
+        $this->user->create();
+      }
+    }
+
+  } $user = new usersController();
+
+?>
