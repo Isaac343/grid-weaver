@@ -9,6 +9,8 @@
   <input type="text" name="email" placeholder="">
   <label>Rol</label>
 	<input type="text" name="rol" placeholder="">
+	<label>password</label>
+	<input type="password" name="password" placeholder="">
 
   <button type="submit" name="new_user">Crear</button>
 </form>

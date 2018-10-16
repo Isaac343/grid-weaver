@@ -17,7 +17,7 @@
       }
 
       function create(){
-        $sql = "INSERT INTO users (IdUser, user_username, user_name, user_surname, user_email, user_rol) VALUES (null, '{$this->username}', '{$this->name}', '{$this->surname}', '{$this->email}', '{$this->rol}')";
+        $sql = "INSERT INTO users (IdUser, user_username, user_password, user_name, user_surname, user_email, user_rol) VALUES (null, '{$this->username}', '{$this->password}', '{$this->name}', '{$this->surname}', '{$this->email}', '{$this->rol}')";
         $this->conn->simple_query($sql);
       }
 
