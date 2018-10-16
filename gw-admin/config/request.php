@@ -9,18 +9,18 @@ class Request{
 		if(isset($_GET['url'])){
 			$route = filter_input(INPUT_GET, 'url', FILTER_SANITIZE_URL);
 			$route = explode("/", $route);
-			print_r($route);
+			// print_r($route);
 			$route = array_filter($route);
 			if (empty($route)){
 				$this->controller = "index";
 			}	else{
 				$this->controller = strtolower(array_shift($route));
-				echo $this->controller;
-				print_r($route);
+				// echo $this->controller;
+				// print_r($route);
 			}
 
 			$this->method = strtolower(array_shift($route));
-			echo $this->method;
+			// echo $this->method;
 
 			if (!$this->method){
 				$this->method = "index";

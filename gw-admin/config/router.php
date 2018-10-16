@@ -26,7 +26,7 @@ class Router{
 
 
 			$route = ROOT . "views" .DS. $request->get_controller() .DS. $request->get_method() . ".php";
-			echo $route;
+			// echo $route;
 			if (is_readable($route)) {
 				require_once $route;
 			} else {
