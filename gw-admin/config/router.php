@@ -11,12 +11,18 @@ class Router{
 			$method = "login";
 		}
 		$argument = $request->get_argument();
+
+
 		if (is_readable($route)) {
+
 			require_once $route;
 			$show = "Controllers\\" . $controller;
+
 			$controller = new $show;
-			if (!isset($argument)) {
+
+			if (isset($argument)) {
 				$datos = call_user_func(array($controller, $method));
+
 			} else {
 				$datos = call_user_func_array(
 					array($controller, $method),
