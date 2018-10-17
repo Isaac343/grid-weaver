@@ -12,5 +12,5 @@
 	<label>Password</label>
 	<input type="password" name="password" placeholder="">
 
-  <button type="submit" name="new_user">Crear</button>
+  <button type="submit" name="new_user" value="1">Crear</button>
 </form>
