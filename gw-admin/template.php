@@ -12,7 +12,7 @@ class Template{
 		<link rel="stylesheet" href="<?php echo STATIC_URL; ?>css/main.css">
 	</head>
   <body>
-		<div class="page">
+		<div class="container-fluid">
 <?php
   }
 	public function __destruct(){
