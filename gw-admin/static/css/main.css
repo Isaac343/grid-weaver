@@ -1,0 +1,35 @@
+.sidebar{
+  padding: 20px;
+  min-height: 100vh;
+  background: #181745;
+}
+.sidebar ul{
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar ul li a{
+  padding: 12px 15px;
+  color: #ddd;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  border-radius: 6px;
+}
+.sidebar ul li a:hover{
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.sidebar .logo{
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.admin-part{
+  background: linear-gradient(to bottom left,#216e93,#21648a,#1f5881,#172d5b,#191c51);
+}
