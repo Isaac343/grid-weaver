@@ -32,11 +32,12 @@ class Router{
 
 
 			$route = ROOT . "views" .DS. $request->get_controller() .DS. $request->get_method() . ".php";
-			// echo $route;
+			 // echo $route;
 			if (is_readable($route)) {
 				require_once $route;
 			} else {
-				print "No se encontro la vista";
+				// print "No se encontro la vista";
+				include ROOT . 'views/unknown/index.php';
 			}
 		}
 	}
