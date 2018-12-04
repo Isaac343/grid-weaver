@@ -3,6 +3,8 @@
   background-color: #171b24;
   color: #fff;
 }
+
+/* = = = = = = = = = = VIEW NOT FOUND = = = = = = = = = */
 .not-found{
   min-height: 100vh;
   background-color: #171b24;
@@ -19,6 +21,8 @@
   font-size: 25px;
   font-weight: bold;
 }
+
+/* = = = = = = = = = = SIDEBAR = = = = = = = = = = */
 .sidebar{
   padding: 20px;
   min-height: 100vh;
@@ -96,11 +100,13 @@ details li a{
   font-weight: 600;
 }
 
+/* = = = = = = = = = = GLOBAL ADMIN SECCTION = = = = = = = = = = */
 .admin-part{
   /* background: linear-gradient(to bottom left,#ed590f,#e0720c,#c16007,#b95e00,#c28205); */
   background: #171b24;
   /* background: #23182c; */
 }
+/* = = = = = = = = = = DASHBOARD = = = = = = = = = = */
 .wellcome-dashboard{
   display: block;
   width: 100%;
@@ -111,11 +117,12 @@ details li a{
   color: #ddd;
   background-color: transparent;
   background-clip: padding-box;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  /* border: 1px solid rgba(255, 255, 255, 0.25); */
   border-radius: 3px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+/* = = = = = = = = = = ADMIN USERS = = = = = = = = = = */
 .new-user-form{
   background-color: rgba(0, 0, 0, 0.3);
   color: #ddd;
@@ -152,8 +159,17 @@ details li a{
   word-wrap: break-word;
   background-color: rgba(0, 0, 0, 0.3);
   background-clip: border-box;
-  border: 1px solid rgba(0, 40, 100, 0.12);
+  border: 0px solid rgba(0, 40, 100, 0.12);
   position: relative;
   margin-bottom: 1.5rem;
   width: 100%;
+}
+
+.main-admin-stuff{
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  padding: 5px;
+}
+.admin-stuff{
+  background-color: rgba(0, 0, 0, 0.15);
 }
