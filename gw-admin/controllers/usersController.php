@@ -7,6 +7,9 @@
       $this->user = new Users();
     }
 
+    function index(){
+      //code
+    }
     function add(){
       if (isset($_POST['new_user'])) { //user form
 
@@ -20,6 +23,14 @@
       }
     }
 
-  } $user = new usersController();
+    function edit(){
+      // code
+    }
 
+    function overall(){
+      //
+    }
+
+  } $user = new usersController();
+//
 ?>
