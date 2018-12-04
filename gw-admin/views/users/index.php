@@ -2,42 +2,26 @@
 	<?php include ROOT . 'views/_includes/sidebar.php' ?>
 	<div class="col-10">
 		<div class="row justify-content-center">
-			<div class="col-5">
+			<div class="col">
 				<div class="new-user-form shadow-lg py-4 px-5 mt-8 rounded ">
-					<form action="" method="POST">
-						<h3 class="text-center admin-form">New user</h3>
-						<div class="form-group">
-							<input class="admin-form-input font-weight-bold" type="text" name="username" placeholder="Username">
-						</div>
-						<div class="form-group">
-						  <input class="admin-form-input font-weight-bold" type="text" name="name" placeholder="Name">
-						</div>
-					  <div class="form-group">
-						 	<input class="admin-form-input font-weight-bold" type="text" name="surname" placeholder="Surname">
-					  </div>
-					 	<div class="form-group">
-						  	<input class="admin-form-input font-weight-bold" type="text" name="email" placeholder="E-mail">
-					 	</div>
-					 	<div class="form-group">
-						 	<input class="admin-form-input font-weight-bold" type="text" name="rol" placeholder="Rol">
-					 	</div>
-						<div class="form-group">
-							<input class="admin-form-input font-weight-bold" type="password" name="password" placeholder="Password">
-						</div>
-						<div class="form-group">
-							<button type="submit"  class="btn admin-add-button btn-lg" name="new_user" value="1">Create</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="col-5">
-				<div class="new-user-form shadow-lg py-4 px-5 mt-8 rounded ">
-					<form action="" method="POST">
-						<h3 class="text-center admin-form">Users</h3>
-						<div class="form-group">
-							<input type="text" class="admin-form-input font-weight-bold" name="Userdel" placeholder="Select user">
-						</div>
-					</form>
+					<h3>Users</h3>
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Name</th>
+								<th scope="col">Username</th>
+								<th scope="col">Pages</th>
+								<th scope="col">Posts</th>
+								<th scope="col">Date</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php
+
+							?>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
