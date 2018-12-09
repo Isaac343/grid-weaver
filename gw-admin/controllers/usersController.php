@@ -8,7 +8,9 @@
     }
 
     function index(){
-      //code
+      if (true) {
+        $this->user->list();
+      }
     }
     function add(){
       if (isset($_POST['new_user'])) { //user form

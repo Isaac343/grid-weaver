@@ -17,9 +17,16 @@
 							</tr>
 						</thead>
 						<tbody>
-							<?php
-
-							?>
+							<?php if(mysqli_num_rows($result) > 0):?>
+								<?php while ($row = mysqli_fetch_assoc($result)):?>
+									<tr>
+										<td> <?php echo $row['IdUser']; ?> </td>
+										<td> <?php echo $row['user_name']; ?></td>
+										<td> <?php echo $row['user_username']; ?></td>
+										<td> <?php //echo $row['']; ?></td>
+									</tr>
+								<?php endwhile; ?>
+							<?php endif; ?>
 						</tbody>
 					</table>
 				</div>
