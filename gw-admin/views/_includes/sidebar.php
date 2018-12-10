@@ -23,7 +23,7 @@
     <details>
       <summary>Users</summary>
       <ul>
-        <li><a href="<?php echo URL; ?>users">All users</a></li>
+        <li><a href="<?php echo URL; ?>users/">All users</a></li>
         <li><a href="<?php echo URL; ?>users/add">Add user</a></li>
         <li><a href="<?php echo URL; ?>users/edit">Edit user</a></li>
       </ul>

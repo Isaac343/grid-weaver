@@ -5,7 +5,7 @@
 	<div class="col col-login mx-auto">
 		<div class="text-center mb-6">
 
-			<img src="<?php echo STATIC_URL; ?>img/logo-dark.svg" class="h-6" alt="">
+
 
 		</div>
 		<form class="card" action="" method="post">

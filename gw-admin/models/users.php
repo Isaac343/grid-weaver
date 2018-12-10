@@ -5,12 +5,12 @@
       private $conn;
 
       function __construct(){
-        $this->conn = new Connection();
+        $this->conn = new Connection(); //DB conection
       }
 
       function set($att, $value){
         $this->$att = $value;
-        // echo $att .'='. $value . '<br>';
+        //echo $att .'='. $value . '<br>';
       }
 
       function get($att){
@@ -18,10 +18,9 @@
       }
 
       function list(){
-        $sql = "SELECT IdUser, user_name, user_username FROM gw_users ORDER BY id DESC";
-        // $resutl = $this->conn->query($sql);
-        $this->conn->simple_query($sql);
-        // $this->conn->returnsimple_query($sql);
+        $sql = "SELECT * FROM gw_users ORDER BY id DESC";
+        $result = $this->conn->return_query($sql);
+        return;
       }
 
       function create(){

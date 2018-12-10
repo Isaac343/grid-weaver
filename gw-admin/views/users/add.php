@@ -23,7 +23,6 @@
 								<option value="administrator">Administrator</option>
 								<option value="user">User</option>
 							</select>
-						 	<!-- <input class="admin-form-input font-weight-bold" type="text" name="rol" placeholder="Rol"> -->
 					 	</div>
 						<div class="form-group">
 							<input class="admin-form-input font-weight-bold" type="password" name="password" placeholder="Password">

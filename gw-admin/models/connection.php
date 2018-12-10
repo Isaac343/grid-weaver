@@ -16,7 +16,7 @@
       }
     }
     public function simple_query($sql){
-      echo $sql;
+      //echo $sql;
       $this->conn->query($sql);
     }
     public function return_query($sql){

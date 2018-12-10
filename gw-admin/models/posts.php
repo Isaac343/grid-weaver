@@ -17,7 +17,8 @@
     }
 
     function create(){
-      $sql = "INSERT INTO posts(IdPost, post_title, post_date, post_category, post_content, post_status, post_user, post_slug) VALUES (null, '{$this->post_title}')"; //PENDIENTE COLOCAR VARIABLES A INSERTAR
+      $date =  date('Y'.'-'.'n'.'-'.'d'.' '.'G'.':'.'i'.':'.'s');
+      $sql = "INSERT INTO gw_posts(IdPost, post_title, post_date, post_category, post_content, post_status, post_user, post_slug) VALUES (null, '{$this->post_title}', '$date', '{$this->post_category}', '$this->post_content', null, null, null)";
       $this->conn->simple_query($sql);
     }
   }

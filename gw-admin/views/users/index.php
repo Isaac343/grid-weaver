@@ -1,5 +1,6 @@
 <div class="row admin-part">
 	<?php include ROOT . 'views/_includes/sidebar.php' ?>
+
 	<div class="col-10">
 		<div class="row justify-content-center">
 			<div class="col">
@@ -17,8 +18,8 @@
 							</tr>
 						</thead>
 						<tbody>
-							<?php if(mysqli_num_rows($result) > 0):?>
-								<?php while ($row = mysqli_fetch_assoc($result)):?>
+							<?php	if(mysqli_num_rows($resp) > 0):?>
+								<?php while ($row = mysqli_fetch_assoc($resp)):?>
 									<tr>
 										<td> <?php echo $row['IdUser']; ?> </td>
 										<td> <?php echo $row['user_name']; ?></td>

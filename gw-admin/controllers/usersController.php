@@ -29,10 +29,35 @@
       // code
     }
 
-    function overall(){
-      //
-    }
-
   } $user = new usersController();
+    // $result = new usersController;
+    // $result->index();
+//
+class postsController{
+  private $posts;
+
+  function __construct(){
+    $this->posts = new Posts();
+  }
+
+  function index(){
+    if (true) {
+      $this->user->list();
+    }
+  }
+  function new_post(){
+    if (isset($_POST['new_post'])) { //user form
+
+      $this->posts->set('post_title', $_POST['post_title']);
+      $this->posts->set('post_content', $_POST['post_content']);
+      $this->posts->set('post_category', $_POST['post_category']);
+      $this->posts->create();
+    }
+  }
+
+
+} $user = new usersController();
+  // $result = new usersController;
+  // $result->index();
 //
 ?>
